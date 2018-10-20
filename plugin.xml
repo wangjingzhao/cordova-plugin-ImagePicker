@@ -131,9 +131,9 @@
         </edit-config>-->
 
         <!--Cordova-Android 7.0-->
-        <!--<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+        <config-file target="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:largeHeap="true" />
-        </edit-config>-->
+        </config-file>
         <hook type="after_prepare" src="hooks/after_prepare/010-update-android-manifest.js" />
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
